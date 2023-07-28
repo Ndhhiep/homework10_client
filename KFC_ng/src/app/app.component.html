@@ -1,0 +1,3 @@
+<app-header (newItemEvent)="addItem($event)"></app-header>
+<app-body [itemList]="itemList" (newItemEvent)="delete($event)"></app-body>
+<app-footer></app-footer>
