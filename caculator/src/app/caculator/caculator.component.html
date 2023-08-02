@@ -1,0 +1,46 @@
+<div id="box">
+  <div>
+    <div id="display">
+      <div id="head">
+        <div id="left">
+          <span id="operator">{{ caculator.operator }}</span>
+        </div>
+        <div id="right">
+          <input type="text" [(ngModel)]="caculator.firstNum" />
+          <input type="text" [(ngModel)]="caculator.secondNum" />
+        </div>
+      </div>
+      <div id="result"><p>{{ caculator.result }}</p></div>
+    </div>
+    <div id="btn_box">
+      <div id="left">
+        <br />
+        <button (click)="onButtonClick('1')">1</button>
+        <button (click)="onButtonClick('2')">2</button>
+        <button (click)="onButtonClick('3')">3</button>
+        <button (click)="onButtonClick('+')">+</button>
+        <br />
+        <button (click)="onButtonClick('4')">4</button>
+        <button (click)="onButtonClick('5')">5</button>
+        <button (click)="onButtonClick('6')">6</button>
+        <button (click)="onButtonClick('-')">-</button>
+        <br />
+        <button (click)="onButtonClick('7')">7</button>
+        <button (click)="onButtonClick('8')">8</button>
+        <button (click)="onButtonClick('9')">9</button>
+        <button (click)="onButtonClick('*')">*</button>
+        <br />
+        <button (click)="onButtonClick('0')">0</button>
+        <button (click)="onButtonClick('.')">.</button>
+        <button (click)="onButtonClick('ce')">CE</button>
+        <button (click)="onButtonClick('/')">/</button>
+      </div>
+
+      <div id="right">
+        <br />
+        <button id="btn_r" (click)="onButtonClick('ac')">AC</button>
+        <button id="btn_r" (click)="onButtonClick('=')">=</button>
+      </div>
+    </div>
+  </div>
+</div>
