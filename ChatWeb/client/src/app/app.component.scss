@@ -1,0 +1,100 @@
+#box{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    #header{
+        height: 10%;
+        background-color: #EEEEEE;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        #left{
+            height: 100%;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            color: #00BFFF
+            ;
+            font-size: 30px;
+            h3{
+                margin-top: 20px;
+            }
+        }
+
+        #right{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 50px;
+            input{
+                margin:0 10px;
+                width: 100px;
+                height: 30px;
+                border-radius: 10px;
+                border: solid 1px black;
+            }
+            button{
+                border-radius: 10px;
+            }
+        }
+    }
+    #main{
+        height: 80%;
+        #box_chat{
+            height: 100%;
+            .myMes {
+                align-self: flex-end;
+                background-color: #e2f0cb;
+                padding: 5px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+              }
+              
+              .friendMes {
+                align-self: flex-start;
+                background-color: #f2f2f2;
+                padding: 5px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+              }
+            #message{
+                margin: 10px 20px;
+                display: flex;
+                align-items: center;
+                #from{
+                    margin-right: 10px;
+                    border: solid 1px black;
+                    border-radius: 50%;
+                    padding: 5px;
+                }
+                #mes{
+                    border: solid 1px black;
+                    border-radius: 10px;
+                    background-color: #1C86EE;
+                    color: white;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    #sendBar{
+        height: 10%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            margin:0 10px;
+            width: 600px;
+            height: 30px;
+            background-color: lightgray;
+            border-radius: 10px;
+            border: solid 1px black;
+        }
+    }
+
+}
